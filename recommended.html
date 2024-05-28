@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="shortcut icon" type="x-icon" href="Photos/logo2.png">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PC Crafter</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Roboto', sans-serif;
+            background-image: url(Photos/background2.jpg);
+            background-repeat: no-repeat;
+            background-position: center;
+            background-attachment: fixed;
+            color: #333;
+        }
+        .navbar-custom {
+            background-color: #000000;
+        }
+        .navbar-custom .navbar-brand,
+        .navbar-custom .nav-link {
+            color: #fff;
+        }
+        .navbar-custom .nav-link:hover {
+            color: #c7c7c7;
+        }
+        .dropdown-menu {
+            background-color: #000000;
+        }
+        .dropdown-menu .dropdown-item {
+            color: #fff;
+        }
+        .dropdown-menu .dropdown-item:hover {
+            background-color: #575757;
+        }
+        .container {
+            margin-top: 20px;
+            padding: 20px;
+            background-color: #ffffff00;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+        .section-title {
+            font-size: 24px;
+            margin-bottom: 20px;
+            color: #ffffff;
+            border-bottom: 2px solid #ffffff;
+            padding-bottom: 5px;
+        }
+        .list-item {
+            padding: 15px;
+            margin-bottom: 10px;
+            background-color: #f8f9fa00;
+            transition: background-color 0.3s, box-shadow 0.3s;
+        }
+        .list-item:hover {
+            background-color: #ffffff;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+        .list-item a {
+            text-decoration: none;
+            color: #000000;
+            font-weight: bold;
+        }
+        .list-item a:hover {
+            text-decoration: underline;
+        }
+        .footer {
+            background-color: #000000;
+            color: #ffffff;
+            text-align: center;
+            padding: 20px 0;
+            margin-top: 40px;
+        }
+        .card{
+            width: 350px;
+            height: 635px;
+            border-radius: 5px;
+            padding: 5px;
+            margin-bottom: 5px;
+            color: rgb(255, 255, 255);
+            background-color: #0000009e;
+            
+
+        }
+            
+        .fixed-right {
+    position: absolute;
+    top: 9px;
+    right: 20px;
+    z-index: 1000;
+}
+
+.fixed-right .form-control {
+    width: 400px;
+    margin-top: 15px;
+}
+.center {
+            text-align: center;
+        }
+        .center h6 {
+            color: white;
+            margin: 0;
+        }
+        .logo-image {
+            width: 100px;
+            height: 55px;
+            border-radius: 5%;
+            overflow: hidden;
+            margin-top: 5px;
+        }
+    </style>
+</head>
+    <nav class="navbar navbar-expand-lg navbar-custom">
+        <a class="navbar-brand" href="frontpage.html">
+            <div class="logo-image">
+                <img src="Photos/logo.png" class="img-fluid">
+            </div>
+        </a>
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavDropdown">
+            <ul class="navbar-nav">
+                <li class="nav-item active">
+                    <a class="nav-link" href=".html"> Pre-built PCs and Barebones <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        PC build guides worth your budget
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                        <a class="dropdown-item" href="https://www.youtube.com/watch?v=phggKfeSKgU&pp=ygUiMTUgMDAwIHBlc29zIHBjIGJ1aWxkIHBoaWxpcHBpbmVzIA%3D%3D" target="_blank">₱15,000</a>
+                        <a class="dropdown-item" href="https://www.youtube.com/watch?v=GHDGGGPPKSw&pp=ygUfMjBrIGJ1ZGdldCBwYyBidWlsZCBwaGlsaXBwaW5lcw%3D%3D" target="_blank">₱20,000</a>
+                        <a class="dropdown-item" href="https://www.youtube.com/watch?v=eYrbr92iOes&pp=ygUfMzBrIGJ1ZGdldCBwYyBidWlsZCBwaGlsaXBwaW5lcw%3D%3D" target="_blank">₱30,000</a>
+                    </div>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="recommended.html">Recommendations</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="aboutus.html">About Us</a>
+                </li>
+                <li class="nav-item active">
+                    <a class="nav-link" href="buildguide.html"> Beginner Build Guide<span class="sr-only">(current)</span></a>
+                </li>
+            </ul>
+            <div  class="search-bar mb-4 fixed-right">
+                <input type="text" class="form-control" placeholder="Searching...">
+            </div>
+        </div>
+    </nav>
+
+
+    <div class="container">
+        <div class="section-title">Recommended PC Parts</div>
+        <div class="row">
+
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="https://tpucdn.com/cpu-specs/images/chips/2365-front.jpg" class="card-img-top" alt="PC Part 1">
+                    <div class="card-body">
+                        <h5 class="card-title">CPU: AMD Ryzen 5 5600X | ₱8,795</h5>
+                        <p style="text-align: justify;" class="card-text">The Ryzen 5 5600X offers excellent performance for gaming and productivity tasks with its 6 cores and 12 threads. It's known for its strong single-core performance and efficiency.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="https://m.media-amazon.com/images/I/81uFpNyjm5L._AC_SL1500_.jpg" class="card-img-top" alt="PC Part 2">
+                    <div class="card-body">
+                        <h5 class="card-title">GPU: NVIDIA GeForce RTX 3060 Ti | ₱23,599.00</h5>
+                        <p style="text-align: justify;" class="card-text">The RTX 3060 Ti provides outstanding gaming performance at 1080p and 1440p resolutions. It offers ray tracing capabilities and DLSS support for improved visuals and performance in supported games.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="https://www.itech.ph/wp-content/uploads/2022/01/Asus-ROG-Strix-B550-F-Gaming-Wifi-II-Gaming-Motherboard.jpg" class="card-img-top" alt="PC Part 3">
+                    <div class="card-body">
+                        <h5 class="card-title">Motherboard: ASUS ROG Strix B550-F Gaming | ₱12,585.00</h5>
+                        <p style="text-align: justify;" class="card-text">This motherboard offers a great balance of features, performance, and price. It supports PCIe 4.0 for future-proofing and has robust power delivery for stable overclocking.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="https://m.media-amazon.com/images/I/71S8bqxCbjL._AC_UF894,1000_QL80_DpWeblab_.jpg" class="card-img-top" alt="PC Part 4">
+                    <div class="card-body">
+                        <h5 class="card-title">RAM: Corsair Vengeance LPX 16GB (2 x 8GB) DDR4 3200MHz | ₱9,990.00</h5>
+                        <p style="text-align: justify;" class="card-text">This RAM kit offers a good balance of speed and capacity for gaming and multitasking.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6324/6324468_sd.jpg" class="card-img-top" alt="PC Part 5">
+                    <div class="card-body">
+                        <h5 class="card-title">SSD: Samsung 970 EVO Plus 500GB NVMe M.2 | ₱4,343.00</h5>
+                        <p style="text-align: justify;" class="card-text">The 970 EVO Plus delivers fast read/write speeds and excellent reliability. It's ideal for use as a boot drive or for storing frequently accessed files and games.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="https://c1.neweggimages.com/productimage/nb640/17-438-163-Z01.jpg" class="card-img-top" alt="PC Part 6">
+                    <div class="card-body">
+                        <h5 class="card-title">Power Supply: EVGA SuperNOVA 650 G5 | ₱3,045.00</h5>
+                        <p style="text-align: justify;" class="card-text">This 650W power supply offers high efficiency and reliable performance. It's fully modular, making cable management easier.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="https://ph-live-01.slatic.net/p/2beb50a10430bd90534f300d89734756.jpg" class="card-img-top" alt="PC Part 7">
+                    <div class="card-body">
+                        <h5 class="card-title">HDD: Seagate Barracuda 2TB | ₱3,252.00</h5>
+                        <p style="text-align: justify;" class="card-text">Seagate Barracuda drives are known for their reliability and affordability. This 2TB HDD provides ample storage space for games, media, and other files.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="https://image.citycenter.jo/cache/catalog/12020/42020/212RGB-1200x630.jpg" class="card-img-top" alt="PC Part 8">
+                    <div class="card-body">
+                        <h5 class="card-title">CPU Cooler: Cooler Master Hyper 212 RGB Black Edition | ₱2,650.00</h5>
+                        <p style="text-align: justify;" class="card-text">The Hyper 212 is a popular air cooler known for its excellent cooling performance and quiet operation.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="https://pcrevolution.com.ph/cdn/shop/products/nzxt_c9b7ad46-6501-4303-b895-55d5b0a65e3a_580x.png?v=1630461525" class="card-img-top" alt="PC Part 9">
+                    <div class="card-body">
+                        <h5 class="card-title">Case: NZXT H510 | ₱7,580.00</h5>
+                        <p style="text-align: justify;" class="card-text">The NZXT H510 features a clean and modern design with excellent cable management options. It offers good airflow and plenty of space for most builds.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="https://easypc.com.ph/cdn/shop/products/Arctic_P12_PWM_PST_CO-a_2048x2048.jpg?v=1698394269" class="card-img-top" alt="PC Part 10">
+                    <div class="card-body">
+                        <h5 class="card-title">Case Fans: ARCTIC P12 PWM PST | ₱355.00</h5>
+                        <p style="text-align: justify;" class="card-text">These fans offer a good balance of airflow, static pressure, and noise levels. The PWM function allows for automatic speed control based on temperature.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="https://www.asus.com/media/global/products/2HXZjR1YHYisBKrM/P_setting_xxx_0_90_end_500.png" class="card-img-top" alt="PC Part 11">
+                    <div class="card-body">
+                        <h5 class="card-title">Monitor: ASUS VG248QE 24" Full HD 144Hz | ₱11,000.00</h5>
+                        <p style="text-align: justify;" class="card-text">This monitor offers a high refresh rate for smooth gaming performance and a Full HD resolution for crisp visuals.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="https://ecommerce.datablitz.com.ph/cdn/shop/products/71payqCbsdL._AC_SL1500_800x.jpg?v=1676788229" class="card-img-top" alt="PC Part 12">
+                    <div class="card-body">
+                        <h5 class="card-title">Keyboard & Mouse: Corsair K55 RGB Keyboard and Harpoon RGB Mouse Combo | ₱3,250.00</h5>
+                        <p style="text-align: justify;" class="card-text">This combo offers good performance and features for its price. The keyboard has programmable macro keys, while the mouse has adjustable DPI settings.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="center">
+        <h6 style="color: white;">Some prices might not be the same as the suggested retail price.</h6>
+      </div>
+
+    <div class="footer">
+        &copy; 2024 PC Crafter. All rights reserved.
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
